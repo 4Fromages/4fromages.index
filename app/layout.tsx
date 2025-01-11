@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${spaceMono.variable} antialiased`}
+        className={`${spaceMono.variable} antialiased select-none`}
       >
         {children}
       </body>

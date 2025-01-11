@@ -1,12 +1,13 @@
 import type { Config } from "tailwindcss";
+const flowbite = require("flowbite-react/tailwind");
 
 export default {
+  darkMode: 'media',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
-    "./node_modules/flowbite/**/*.js",
+    flowbite.content(),
   ],
   theme: {
     extend: {
@@ -14,7 +15,24 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        "flip-words": {
+          "10%": { transform: "translateY(-112%)" },
+          "25%": { transform: "translateY(-100%)" },
+          "35%": { transform: "translateY(-212%)" },
+          "50%": { transform: "translateY(-200%)" },
+          "60%": { transform: "translateY(-312%)" },
+          "75%": { transform: "translateY(-300%)" },
+          "85%": { transform: "translateY(-412%)" },
+          "100%": { transform: "translateY(-400%)" },
+        },
+      },
+      animation: {
+        "flip-words": "flip-words 8s infinite",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(),
+  ],
 } satisfies Config;
