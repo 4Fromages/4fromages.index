@@ -45,7 +45,7 @@ export default function Footer() {
                     &copy;{new Date().getFullYear()} - 4Fromages
                 </p>
                 <p className="text-sm text-center sm:text-left">
-                    Made with <a target="_blank" className="underline" href="https://nextjs.org/">NextJS</a> and <a target="_blank" className="underline" href="https://flowbite.com/">Flowbite</a>/<a target="_blank" className="underline" href="https://tailwindcss.com/">TailwindCSS</a> &lt;3
+                    Made with <a target="_blank" className="underline" href="https://nextjs.org/">NextJS</a> and <a target="_blank" className="underline" href="https://flowbite.com/">Flowbite</a>/<a target="_blank" className="underline" href="https://tailwindcss.com/">TailwindCSS</a> &lt;3 (tests worked)
                 </p>
             </div>
         </footer>
